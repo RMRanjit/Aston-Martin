@@ -1,0 +1,47 @@
+{
+  "name": "dakini",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.3",
+    "@react-native-community/slider": "^4.2.2",
+    "@react-navigation/bottom-tabs": "^6.2.0",
+    "@react-navigation/material-bottom-tabs": "^6.1.1",
+    "@react-navigation/native": "^6.0.8",
+    "@react-navigation/native-stack": "^6.5.0",
+    "@tensorflow-models/coco-ssd": "^2.2.2",
+    "@tensorflow/tfjs": "^3.14.0",
+    "@tensorflow/tfjs-react-native": "^0.8.0",
+    "@types/react-native-canvas": "^0.1.8",
+    "expo": "~44.0.0",
+    "expo-camera": "^12.1.2",
+    "expo-gl": "^11.1.2",
+    "expo-gl-cpp": "^11.1.1",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-canvas": "^0.1.38",
+    "react-native-fs": "^2.19.0",
+    "react-native-gesture-handler": "^2.3.2",
+    "react-native-paper": "^4.11.2",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-vector-icons": "^9.1.0",
+    "react-native-web": "0.17.1",
+    "react-native-webview": "^11.17.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
+}
