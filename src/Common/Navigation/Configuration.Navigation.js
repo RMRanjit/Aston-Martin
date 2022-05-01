@@ -12,6 +12,7 @@ export const ConfigurationNavigator = ({ navigation }) => {
         //...TransitionPresets.ModalPresentationIOS,
         headerShown: false,
       }}
+      initialRouteName={"ConfigurationView"}
     >
       <ConfigurationStack.Screen
         name="Configuration"

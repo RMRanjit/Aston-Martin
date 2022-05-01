@@ -29,6 +29,7 @@ export const ProductView = ({ navigation }) => {
           return (
             <TouchableOpacity
               onPress={() =>
+                //console.log("Item is " + JSON.stringify(item))
                 navigation.navigate("ProductDetail", { product: item })
               }
             >

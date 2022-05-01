@@ -15,3 +15,9 @@ export const ProductCardLayout = styled(Card)`
   margin-bottom: 10px;
   background-color: "#175851";
 `;
+
+export const Rating = styled.View`
+  flex-direction: row;
+  padding-top: 2;
+  padding-bottom: 2;
+`;

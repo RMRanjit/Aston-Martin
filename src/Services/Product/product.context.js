@@ -9,6 +9,16 @@ export const ProductsContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const add = (product) => {
+    setProducts([...products, product]);
+  };
+
+  const remove = (product) => {
+    const newProducts = products.filter((x) => x.id !== product.id);
+
+    setProducts(newProducts);
+  };
+
   const retrieveProducts = () => {
     setIsLoading(true);
     setTimeout(() => {
@@ -33,6 +43,8 @@ export const ProductsContextProvider = ({ children }) => {
     <ProductsContext.Provider
       value={{
         products,
+        addToProducts: add,
+        removeFromProducts: remove,
         isLoading,
         error,
       }}

@@ -11,6 +11,9 @@ export const productRequest = () => {
   });
 };
 
+// This is the function where all the transformation would occur on
+// the payload that is recieved... Eg. Adding New attributes
+// {...newResult, newAttribute: "Test Attribute"}
 export const productTransform = (result) => {
   const newResult = camelize(result);
   return newResult;

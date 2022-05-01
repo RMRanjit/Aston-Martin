@@ -34,8 +34,9 @@ export const ProductCard = ({ product = {} }) => {
         title={name}
         titleStyle={{ color: "#fff" }}
         subtitle={type}
-        subtitleStyle={{ color: "#fff",  marginTop: -10 }}
-        left={(props) => <Avatar.Icon {...props} icon={icon} />}
+        subtitleStyle={{ color: "#fff", marginTop: -10 }}
+        left={(props) => <Avatar.Icon {...props} icon={icon} 
+        style={{  }}/>}
         // right={(props) => (
         //   <IconButton {...props} icon="dots-vertical" onPress={() => {}} />
         // )}
@@ -53,7 +54,7 @@ export const ProductCard = ({ product = {} }) => {
         source={photos}
       ></Card.Cover>
       <Card.Content>
-        <Paragraph style={styles.descriptiopn}>{description}</Paragraph>
+        {/* <Paragraph style={styles.descriptiopn}>{description}</Paragraph> */}
       </Card.Content>
     </Card>
   );
